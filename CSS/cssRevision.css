@@ -1,0 +1,102 @@
+.space {
+    margin-bottom: 5px;
+}
+
+.space2 {
+    margin-bottom: 20px;
+}
+
+#narginTopic {
+    margin-top: 15px;
+}
+
+
+/*just call and ID load to display the load*/
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    width: 150px;
+    height: 150px;
+    /*#f3f3f3*/
+    margin: -75px 0 0 -75px;
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid rgba(136, 136, 136, 1);
+    border-bottom: 6px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 0.5s linear infinite;
+    /* Safari */
+    animation: spin 0.5s linear infinite;
+}
+
+#loader4 {
+    width: 350px;
+    height: 180px;
+    margin-left: 36%;
+    margin-top: 15%;
+}
+
+#bot {
+    margin-top: 150px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+
+/*this control the id of the main body that will display the content*/
+
+#myDiv {
+    display: none;
+    text-align: center;
+    margin-top: 10%;
+}

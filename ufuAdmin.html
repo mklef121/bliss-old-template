@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="w3c.CSS" rel="stylesheet" type="text/css" />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="fujs.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class=" w3-white w3-container w3-text-black " style="width:100%; height:auto; position:absolute">
+        <div class="w3-bar w3-black">
+            <a href="performManager.html" class="w3-bar-item w3-btn  w3-hover-light-grey">Home</a>
+            <a href="#" class="w3-bar-item w3-btn  w3-hover-light-grey">Home</a>
+            <a href="#" class="w3-bar-item w3-btn  w3-hover-light-grey">Home</a>
+        </div>
+        <div class="w3-container w3-teal w3-center">
+            <h6><strong>PERFORMANCE MANAGER</strong><br /></h6>
+            <small>University Administration</small>
+        </div>
+        <div class="w3-display-container w3-black w3-card-4 " style="height:auto;">
+            <!--containa-->
+            <form class="w3-container" action="javascript:void(0)">
+                <div class="w3-row-padding w3-center">
+                    <div class="w3-col m4 ">
+                        <div class="w3-section w3-white " style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Deanship</legend>
+                                <div class="w3-section">
+                                    <select id="denoship" name="option" class="w3-select">
+                                    <option value="" disabled selected>Choose Faculty and School</option>
+                                    <option value="SEET">SEET</option>
+                                    <option value="SOHT">SOHT</option>
+                                    <option value="SMAT">SMAT</option>
+                                    <option value="SOSC">SOSC</option>
+                                  </select>
+                                </div>
+                                <div class="w3-section">
+                                    <input id="stdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="findat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button onclick="dDeanSsshipp()" type="submit" class="w3-btn w3-blue"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+                        <div class="w3-section w3-white " style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Directorship</legend>
+                                <div class="w3-section">
+                                    <input required="required" id="centroid" name="stdat" type="text" style="width:100%" placeholder="Center" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="dstdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="dfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="centerIood()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Co-Ordinatorship</legend>
+                                <div class="w3-section">
+                                    <input id="program" name="stdat" type="text" style="width:100%" placeholder="Program" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="cstdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="cfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="calorOdinateSa()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+                        <!--2 image-->
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Student Advisorship</legend>
+                                <div class="w3-section">
+                                    <input id="studAdvy" name="stdat" type="text" style="width:100%" placeholder="Department" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="set" name="stdat" type="text" style="width:100%" placeholder="Set" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="stastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="sadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="sStudentAAdvisorshipp()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="w3-col m4">
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Lab Organisation</legend>
+                                <div class="w3-section">
+                                    <input id="naofOrgan" name="stdat" type="text" style="width:100%" placeholder="Name Of Organisation" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="capacity" name="stdat" type="text" style="width:100%" placeholder="Capacity" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="lstastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="lsadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="labOrganZZ()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Other University Services</legend>
+                                <div class="w3-section">
+                                    <input id="namofser" name="stdat" type="text" style="width:100%" placeholder="Name of Services" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="cap" name="stdat" type="text" style="width:100%" placeholder="Capacity" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="stastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="sadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="otherUniverServicezz()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Associate Deanship</legend>
+                                <div class="w3-section">
+                                    <input id="deepptt" name="stdat" type="text" style="width:100%" placeholder="Department" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="set" name="stdat" type="text" style="width:100%" placeholder="Set" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="stastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="sadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="aassoocciateDeanShiiip()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+                        <!--2 image-->
+                        <div class="w3-section w3-white" style="width:100%; height:100;">
+                            <fieldset>
+                                <legend>Headship</legend>
+                                <div class="w3-section">
+                                    <input id="heshipp" name="stdat" type="text" style="width:100%" placeholder="Department" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="hstastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="hsadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick=" hheaddSshipp()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="w3-col m4">
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Membership of University/School Committee</legend>
+                                <div class="w3-section">
+                                    <input id="membOfUniv" name="stdat" type="text" style="width:100%" placeholder="Committee" />
+                                </div>
+                                <div class="w3-section">
+                                    <select name="option" class="w3-select">
+                         <option value="" disabled selected>Capacity</option>
+                         <option value="Chairman">Chairman</option>
+                         <option value="Secretary">Secretary</option>
+                         <option value="Member">Member</option>
+                         <option value="Others">Others</option>
+                      </select>
+                                </div>
+                                <div class="w3-section">
+                                    <input id="stastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="sadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="memUnivCommitee()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+                        <div class="w3-section w3-white" style="width:100%; height:100%">
+                            <fieldset>
+                                <legend>SIWES</legend>
+                                <div class="w3-section">
+                                    <input id="capaci" name="stdat" type="text" style="width:100%" placeholder="Capacity" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="set" name="stdat" type="text" style="width:100%" placeholder="Set" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="shstastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="shsadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="callSIWESFun()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+
+
+
+                        <div class="w3-section w3-white" style="width:100%; height:100%;">
+                            <fieldset>
+                                <legend>Hall Mastership</legend>
+                                <div class="w3-section">
+                                    <select id="halmast" name="option" class="w3-select">
+                         <option value="" disabled selected>Hall Name</option>
+                         <option value="Chairman">Chairman</option>
+                         <option value="Secretary">Secretary</option>
+                         <option value="Member">Member</option>
+                         <option value="Others">Others</option>
+                      </select>
+                                </div>
+                                <div class="w3-section">
+                                    <input id="hallstastdat" name="stdat" type="text" style="width:100%" placeholder="Start Date" />
+                                </div>
+                                <div class="w3-section">
+                                    <input id="hallsadfindat" name="fndat" type="text" style="width:100%" placeholder="Finish Date" />
+                                </div>
+                                <button type="submit" class="w3-btn w3-blue" onclick="haallMmastters()"><i class="fa fa-windows"></i> Send</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar">
+                    <a href="#" class="w3-btn w3-round-xxlarge w3-blue w3-margin w3-bar-item w3-left">More</a>
+                    <a href="#" class="w3-btn w3-round-xxlarge w3-blue w3-bar-item w3-margin w3-right">Done</a>
+                </div>
+            </form>
+        </div>
+        <!--end container-->
+    </div>
+    <!--<div class=" w3-green w3-display-container w3-text-white" style="width:100%; height:100%; overflow:hidden; position:absolute">
+   <div class="w3-bar w3-black">
+     <div class="w3-bar-item">
+       <div class="w3-col s4"><img class="w3-circle w3-xxlarge" src="Images/474001892.jpg" alt="pic" style="height:50px;"></i></div>
+     <div class="w3-col s8"><h1><small>System</small></h1></div>
+     </div>
+   </div>
+    <div class="w3-display-middle w3-center w3-text-teal " style="width:650px; height:300px">
+       <div class="w3-row-padding w3-margin-top"><!--row1-->
+    <!--<div class="w3-col s4">
+           <div class="w3-card-4 w3-hover-khaki">
+             <a href="#"><img src="Images/enrol.png" style="width:70px; height:90px;" /></a>
+             
+                <h5>ENROLMENT</h5>
+             
+           </div>
+         </div>
+         <div class="w3-col s4">
+           <div class="w3-card-4  w3-hover-khaki">
+             <a href="#"><img src="Images/perfoma.png" style="width:70px; height:90px;" /></a>
+             
+                <h5>ENROLMENT</h5>
+            
+           </div>
+         </div>
+         <div class="w3-col s4">
+            <div class="w3-card-4  w3-hover-khaki">
+             <a href="#"><img src="Images/1389952697.png" style="width:70px; height:90px;"/></a>
+             
+                <h5>ENROLMENT</h5>
+             
+           </div>
+         </div>
+       </div><!--end of row-->
+
+    <!--<div class="w3-row-padding w3-margin-top"><!--row2-->
+    <!--<div class="w3-col s4">
+           <div class="w3-card-4  w3-hover-khaki">
+             <a href="#"><img src="Images/rende.png" style="width:70px; height:90px;" /></a>
+             
+                <h5>ENROLMENT</h5>
+             
+           </div>
+         </div>
+         <div class="w3-col s4">
+           <div class="w3-card-4  w3-hover-khaki">
+             <a href="#"><img src="Images/memo1.png" style="width:70px; height:90px;" /></a>
+             
+                <h5>ENROLMENT</h5>
+          
+           </div>
+         </div>
+         <div class="w3-col s4">
+            <div class="w3-card-4  w3-hover-khaki">
+            <a href="#"> <img src="Images/leave ma.png" style="width:70px; height:90px;" /></a>
+            
+                <h5>ENROLMENT</h5>
+             
+           </div>
+         </div>
+       </div><!--end of row2-->
+    <!--</div>-->
+    <!--</div>-->
+    <form action="#" method="post">
+        <input type="text" placeholder="f" name=na /></form>
+    <input type="text" placeholder="s" name=ln /></form>
+    <input type="text" placeholder="em" name=email /></form>
+    <textarea rows="5" cols="10" name="meg"></textarea>
+    <button type="submit" name="sub" value="Login"></button>
+    </form>
+</body>
+
+</html>
